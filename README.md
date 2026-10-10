@@ -1,5 +1,8 @@
 # ExaltHUD Standalone
 
+[![Release](https://img.shields.io/github/v/release/dach6/ExaltHud?color=blue)](https://github.com/dach6/ExaltHud/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/dach6/ExaltHud/total)](https://github.com/dach6/ExaltHud/releases/latest)
+
 **Version 1.0.0**
 
 ExaltHUD is a standalone Windows combat dashboard for Realm of the Mad God Exalt, with an optional overlay. It uses Npcap to observe game traffic and runs independently of ExaltHelper.
@@ -17,7 +20,7 @@ ExaltHUD is a standalone Windows combat dashboard for Realm of the Mad God Exalt
 
 1. Use 64-bit Windows 10 or 11 with .NET Framework 4.8.
 2. Install [Npcap](https://npcap.com/#download). Npcap is installed separately and is not bundled with ExaltHUD.
-3. Download and extract the entire `ExaltHUD-Standalone-Release.zip` to a writable folder.
+3. Download and extract the latest [ExaltHUD-Standalone-Release.zip](https://github.com/dach6/ExaltHud/releases/latest/download/ExaltHUD-Standalone-Release.zip) from the [Releases](https://github.com/dach6/ExaltHud/releases) page to a writable folder.
 4. Open `ExaltHUD.exe` and select the adapter carrying the game's traffic, usually Ethernet or Wi-Fi. For a VPN, select the appropriate adapter.
 5. Click **Start listening**, then connect to the game. If already playing, reconnect or change servers so ExaltHUD sees a fresh connection.
 
