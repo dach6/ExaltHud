@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationAssemblyPath Condition="'$(ApplicationAssemblyPath)' == ''">..\bin\Release\net48\ExaltHUD.exe</ApplicationAssemblyPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ExaltHUD"><HintPath>$(ApplicationAssemblyPath)</HintPath></Reference>
+    <None Include="..\ExaltHUD_Data\**\*" Link="ExaltHUD_Data\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\assets\**\*" Link="assets\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
